@@ -1,0 +1,33 @@
+{
+	"pattrstorage" : 	{
+		"name" : "controller-presets",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"slider-controller::visuals_rotate-x" : [ 0.685714285714286 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"slider-controller::visuals_rotate-x" : [ 0.218934911242604 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"slider-controller::visuals_rotate-x" : [ 0.2472696534235 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
