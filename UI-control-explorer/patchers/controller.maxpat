@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 135.0, 100.0, 755.0, 715.0 ],
+		"rect" : [ 137.0, 183.0, 739.0, 582.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -310,7 +310,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 419.0, 394.0, 167.0, 47.0 ],
+					"patching_rect" : [ 438.0, 432.0, 167.0, 47.0 ],
 					"text" : "<- The important thing is that the arguments are ::visuals::object-to-modulate"
 				}
 
@@ -343,7 +343,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 51.0, 389.0, 356.0, 94.0 ],
+					"patching_rect" : [ 59.5, 404.0, 356.0, 94.0 ],
 					"varname" : "slider-controller",
 					"viewvisibility" : 1
 				}

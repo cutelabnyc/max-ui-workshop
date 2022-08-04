@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, 530.0, 702.0, 488.0 ],
+		"rect" : [ 409.0, 327.0, 702.0, 488.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ -33.0, 45.0, 195.0, 22.0 ],
+					"text" : "swanramp-style-smoothing.maxpat"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "live.dial",
@@ -560,6 +572,13 @@
 				"bootpath" : "~/cute/max-ui-workshop/UI-control-explorer/media",
 				"patcherrelativepath" : "../media",
 				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "swanramp-style-smoothing.maxpat",
+				"bootpath" : "~/cute/max-ui-workshop/UI-control-explorer/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
