@@ -40,18 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ -33.0, 45.0, 195.0, 22.0 ],
-					"text" : "swanramp-style-smoothing.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -93,7 +81,7 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/samueltarakajian/cute/max-ui-workshop/UI-control-explorer/media/dreams.mp3",
+								"absolutepath" : "dreams.mp3",
 								"filename" : "dreams.mp3",
 								"filekind" : "audiofile",
 								"id" : "u855000910",
@@ -572,13 +560,6 @@
 				"bootpath" : "~/cute/max-ui-workshop/UI-control-explorer/media",
 				"patcherrelativepath" : "../media",
 				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "swanramp-style-smoothing.maxpat",
-				"bootpath" : "~/cute/max-ui-workshop/UI-control-explorer/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
