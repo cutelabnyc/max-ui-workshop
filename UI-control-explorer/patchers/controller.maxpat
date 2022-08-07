@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 137.0, 183.0, 739.0, 582.0 ],
+		"rect" : [ 169.0, 340.0, 739.0, 691.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 491.25, 235.0, 22.0, 22.0 ],
+					"patching_rect" : [ 491.25, 385.0, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -56,7 +56,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 491.25, 264.5, 60.0, 22.0 ],
+					"patching_rect" : [ 491.25, 414.5, 60.0, 22.0 ],
 					"text" : "s recalled"
 				}
 
@@ -69,9 +69,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.25, 305.0, 169.0, 22.0 ],
+					"patching_rect" : [ 491.25, 455.0, 169.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -89,7 +89,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 471.0, 177.0, 100.0, 40.0 ],
+					"patching_rect" : [ 471.0, 327.0, 100.0, 40.0 ],
 					"pattrstorage" : "controller-presets"
 				}
 
@@ -103,7 +103,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 331.0, 266.5, 34.0, 21.0 ],
+					"patching_rect" : [ 331.0, 416.5, 34.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 344.666667222976685, 85.5, 42.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
@@ -128,7 +128,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 295.0, 266.5, 34.0, 21.0 ],
+					"patching_rect" : [ 295.0, 416.5, 34.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 308.666667222976685, 85.5, 42.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
@@ -153,7 +153,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 259.0, 266.5, 34.0, 21.0 ],
+					"patching_rect" : [ 259.0, 416.5, 34.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 272.666667222976685, 85.5, 42.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
@@ -178,7 +178,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 223.0, 266.5, 34.0, 21.0 ],
+					"patching_rect" : [ 223.0, 416.5, 34.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 257.666667222976685, 70.5, 42.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
@@ -201,7 +201,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 223.0, 231.5, 75.0, 22.0 ],
+					"patching_rect" : [ 223.0, 381.5, 75.0, 22.0 ],
 					"text" : "route a b c d"
 				}
 
@@ -212,7 +212,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 197.0, 294.5, 81.0, 22.0 ],
+					"patching_rect" : [ 197.0, 444.5, 81.0, 22.0 ],
 					"text" : "s mod-source"
 				}
 
@@ -224,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 202.0, 97.0, 22.0 ],
+					"patching_rect" : [ 197.0, 352.0, 97.0, 22.0 ],
 					"text" : "udpreceive 9090"
 				}
 
@@ -310,7 +310,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 438.0, 432.0, 167.0, 47.0 ],
+					"patching_rect" : [ 438.0, 582.0, 167.0, 47.0 ],
 					"text" : "<- The important thing is that the arguments are ::visuals::object-to-modulate"
 				}
 
@@ -343,7 +343,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 59.5, 404.0, 356.0, 94.0 ],
+					"patching_rect" : [ 59.5, 554.0, 356.0, 94.0 ],
 					"varname" : "slider-controller",
 					"viewvisibility" : 1
 				}
@@ -499,6 +499,7 @@
 			"obj-71::obj-101" : [ "live.button", "live.button", 0 ],
 			"obj-71::obj-35" : [ "phase", "Phase", 0 ],
 			"obj-71::obj-55" : [ "rate", "Rate", 0 ],
+			"obj-71::obj-7" : [ "visuals_rotate-x", "visuals_rotate-x", 0 ],
 			"obj-71::obj-79" : [ "live.text", "live.text", 0 ],
 			"obj-71::obj-93" : [ "live.menu", "live.menu", 0 ],
 			"obj-71::obj-98" : [ "live.toggle", "live.toggle", 0 ],

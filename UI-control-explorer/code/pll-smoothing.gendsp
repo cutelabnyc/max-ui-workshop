@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 717.0, 205.0, 883.0, 643.0 ],
+		"rect" : [ 340.0, 215.0, 845.0, 735.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,109 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-21",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 152.5, 207.5, 106.0, 51.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Just ignore the delta when we wrap around"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 103.5, 29.5, 106.0, 51.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Input must be a phasor in the range 0-1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-16",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 176.5, 406.5, 130.0, 37.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Lowpass filtering to smooth things out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-15",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 701.0, 414.0, 116.5, 51.0 ],
+					"presentation_linecount" : 5,
+					"text" : "Limit how much we can speed up or slow down"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-14",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 726.5, 350.5, 91.0, 37.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Do a bit of smoothing"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 612.5, 212.0, 130.0, 51.0 ],
+					"presentation_linecount" : 3,
+					"text" : "If we're behind, speed up. If we're ahead, slow down"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-3",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 409.5, 80.5, 130.0, 51.0 ],
+					"text" : "Figure out whether we're ahead or behind the input"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-64",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 673.0, 292.0, 97.0, 22.0 ],
+					"patching_rect" : [ 598.0, 427.0, 97.0, 22.0 ],
 					"text" : "scale 0. 1. 1. 0.8"
 				}
 
@@ -57,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.0, 292.0, 97.0, 22.0 ],
+					"patching_rect" : [ 401.0, 427.0, 97.0, 22.0 ],
 					"text" : "scale 0. 1. 1. 1.2"
 				}
 
@@ -69,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.0, 215.0, 39.0, 22.0 ],
+					"patching_rect" : [ 401.0, 320.0, 39.0, 22.0 ],
 					"text" : "/ 100."
 				}
 
@@ -81,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 674.0, 215.0, 39.0, 22.0 ],
+					"patching_rect" : [ 599.0, 320.0, 39.0, 22.0 ],
 					"text" : "/ 100."
 				}
 
@@ -93,7 +190,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 673.0, 261.0, 122.0, 22.0 ],
+					"patching_rect" : [ 598.0, 366.0, 122.0, 22.0 ],
 					"text" : "expr (1 - 1 / (in1 + 1))"
 				}
 
@@ -105,7 +202,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 674.0, 174.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 279.0, 29.5, 22.0 ],
 					"text" : "+="
 				}
 
@@ -117,7 +214,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.0, 261.0, 122.0, 22.0 ],
+					"patching_rect" : [ 401.0, 366.0, 122.0, 22.0 ],
 					"text" : "expr (1 - 1 / (in1 + 1))"
 				}
 
@@ -129,7 +226,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.0, 182.0, 29.5, 22.0 ],
+					"patching_rect" : [ 401.0, 287.0, 29.5, 22.0 ],
 					"text" : "+="
 				}
 
@@ -141,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 449.0, 80.0, 22.0 ],
+					"patching_rect" : [ 475.0, 584.0, 80.0, 22.0 ],
 					"text" : "history phase"
 				}
 
@@ -153,7 +250,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 414.0, 29.5, 22.0 ],
+					"patching_rect" : [ 435.0, 549.0, 29.5, 22.0 ],
 					"text" : "*"
 				}
 
@@ -165,7 +262,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 566.0, 379.5, 100.0, 22.0 ],
+					"patching_rect" : [ 491.0, 514.5, 100.0, 22.0 ],
 					"text" : "history delta 0.01"
 				}
 
@@ -177,7 +274,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 374.0, 29.5, 22.0 ],
+					"patching_rect" : [ 435.0, 509.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -189,7 +286,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 474.0, 374.0, 29.5, 22.0 ],
+					"patching_rect" : [ 399.0, 509.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -201,7 +298,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 625.0, 333.0, 29.5, 22.0 ],
+					"patching_rect" : [ 550.0, 468.0, 29.5, 22.0 ],
 					"text" : "*"
 				}
 
@@ -213,7 +310,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 530.0, 333.0, 27.0, 22.0 ],
+					"patching_rect" : [ 455.0, 468.0, 27.0, 22.0 ],
 					"text" : "* 1."
 				}
 
@@ -225,7 +322,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 446.0, 333.0, 29.5, 22.0 ],
+					"patching_rect" : [ 371.0, 468.0, 29.5, 22.0 ],
 					"text" : "*"
 				}
 
@@ -237,7 +334,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 625.0, 127.0, 26.0, 22.0 ],
+					"patching_rect" : [ 550.0, 232.0, 26.0, 22.0 ],
 					"text" : "< 0"
 				}
 
@@ -249,7 +346,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 530.0, 127.0, 33.0, 22.0 ],
+					"patching_rect" : [ 455.0, 232.0, 33.0, 22.0 ],
 					"text" : "== 0"
 				}
 
@@ -261,7 +358,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 446.0, 127.0, 26.0, 22.0 ],
+					"patching_rect" : [ 371.0, 232.0, 26.0, 22.0 ],
 					"text" : "> 0"
 				}
 
@@ -313,14 +410,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 119.0, 534.0, 421.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -349,6 +446,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 9,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 297.0, 140.0, 150.0, 127.0 ],
+									"text" : "Computes an \"around the circle\" distance. So if we're less than 180 degrees ahead of the input, we're considered ahead, and if we're more than 180 degrees ahead, then we're considering ourselves behind."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-32",
 									"maxclass" : "newobj",
@@ -637,24 +746,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-21",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 129.0, 271.5, 150.0, 33.0 ],
-					"text" : "<- Guess the phase delta based on input"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 212.0, 26.0, 22.0 ],
+					"patching_rect" : [ 39.0, 242.0, 26.0, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -666,7 +763,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 248.0, 71.0, 22.0 ],
+					"patching_rect" : [ 39.0, 278.0, 71.0, 22.0 ],
 					"text" : "selector 2 1"
 				}
 
@@ -678,7 +775,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 182.0, 44.0, 22.0 ],
+					"patching_rect" : [ 91.0, 212.0, 44.0, 22.0 ],
 					"text" : "history"
 				}
 
@@ -690,7 +787,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 182.0, 26.0, 22.0 ],
+					"patching_rect" : [ 39.0, 212.0, 26.0, 22.0 ],
 					"text" : "< 0"
 				}
 
@@ -702,7 +799,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.0, 136.0, 35.0, 22.0 ],
+					"patching_rect" : [ 65.0, 166.0, 35.0, 22.0 ],
 					"text" : "delta"
 				}
 
@@ -726,7 +823,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 564.0, 516.0, 80.0, 22.0 ],
+					"patching_rect" : [ 489.0, 651.0, 80.0, 22.0 ],
 					"text" : "history phase"
 				}
 
@@ -738,7 +835,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 481.0, 33.0, 22.0 ],
+					"patching_rect" : [ 435.0, 616.0, 33.0, 22.0 ],
 					"text" : "% 1."
 				}
 
@@ -750,7 +847,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 449.0, 29.5, 22.0 ],
+					"patching_rect" : [ 435.0, 584.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -769,24 +866,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 129.0, 14.0, 150.0, 33.0 ],
-					"text" : "<- Target phasor (must be a phasor)"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.0, 14.0, 28.0, 22.0 ],
+					"patching_rect" : [ 65.0, 44.0, 28.0, 22.0 ],
 					"text" : "in 1"
 				}
 
@@ -797,7 +882,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 516.0, 35.0, 22.0 ],
+					"patching_rect" : [ 435.0, 651.0, 35.0, 22.0 ],
 					"text" : "out 1"
 				}
 
@@ -888,6 +973,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
+					"midpoints" : [ 288.0, 211.0, 380.5, 211.0 ],
 					"order" : 2,
 					"source" : [ "obj-37", 0 ]
 				}
@@ -896,6 +982,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
+					"midpoints" : [ 288.0, 211.0, 464.5, 211.0 ],
 					"order" : 1,
 					"source" : [ "obj-37", 0 ]
 				}
@@ -904,6 +991,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"midpoints" : [ 288.0, 211.0, 559.5, 211.0 ],
 					"order" : 0,
 					"source" : [ "obj-37", 0 ]
 				}
